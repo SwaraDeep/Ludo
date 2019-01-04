@@ -16,52 +16,69 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <RelativeLayout
+            <LinearLayout
+                android:id="@+id/dice_blue_color"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
                 android:layout_margin="15dp"
-                android:background="@android:color/black">
+                android:background="@color/blue">
 
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
                     android:background="@android:color/white"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="@android:color/black"
+                    android:gravity="center">
 
-                    android:textSize="35sp" />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/dice_value_blue"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
 
-            <RelativeLayout
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dice_yellow_color"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:gravity="center">
+                android:background="@color/yellow">
 
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="5dp"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="@android:color/black"
-                    android:textSize="35sp" />
-            </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:background="@android:color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/dice_value_yellow"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
         </RelativeLayout>
 
         <LinearLayout
@@ -100,7 +117,66 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@android:color/white">
+                                android:background="@android:color/white"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_blue_1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_blue_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_blue_3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_blue_4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+                                </LinearLayout>
 
                             </LinearLayout>
                         </LinearLayout>
@@ -123,6 +199,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t10"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -134,6 +211,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t9"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -145,6 +223,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t8"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -157,6 +236,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t7"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -168,6 +248,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t6"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -187,6 +268,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t11"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -198,6 +280,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/ty1"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -210,6 +293,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/ty2"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -222,6 +306,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/ty3"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -234,6 +319,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/ty4"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -255,6 +341,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t12"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -266,6 +353,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t13"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -278,6 +366,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t14"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -289,6 +378,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t15"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -300,6 +390,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t16"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -331,8 +422,68 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@android:color/white">
+                                android:background="@android:color/white"
+                                android:orientation="vertical">
 
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_yellow_1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/init_coin_yellow_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_yellow_3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_yellow_4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
@@ -364,6 +515,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/t48"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -375,6 +527,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/t47"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -386,6 +539,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/t46"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -405,9 +559,24 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/t1"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:textColor="@android:color/white"
+                                    android:background="@color/blue" />
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@android:color/black" />
+
+                                <TextView
+                                    android:id="@+id/tb1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:gravity="center"
                                     android:layout_weight="1"
                                     android:background="@color/blue" />
 
@@ -417,18 +586,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:background="@color/blue" />
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="1dp"
-                                    android:background="@android:color/black" />
-
-                                <TextView
+                                    android:id="@+id/t45"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -449,6 +607,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/t2"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -460,6 +619,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/tb2"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -472,6 +632,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/t44"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -492,6 +653,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/t3"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -503,6 +665,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/tb3"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -515,6 +678,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/t43"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -535,6 +699,7 @@
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:id="@+id/t4"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -546,6 +711,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/tb4"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -558,6 +724,7 @@
                                     android:background="@android:color/black" />
 
                                 <TextView
+                                    android:id="@+id/t42"
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_gravity="center"
@@ -586,6 +753,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t5"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -597,6 +765,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tb5"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -609,6 +778,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t41"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -628,6 +798,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/ty5"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -655,6 +826,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tg5"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -676,6 +848,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t17"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -687,6 +860,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tr5"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -699,6 +873,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t29"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -724,6 +899,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t18"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -735,6 +911,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tr4"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -747,6 +924,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t28"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -766,6 +944,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t19"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -777,6 +956,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tr3"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -789,6 +969,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t27"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -809,6 +990,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t20"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -821,6 +1003,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tr2"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -833,6 +1016,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t26"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -852,6 +1036,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t21"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -863,6 +1048,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tr1"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -875,6 +1061,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t25"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -896,6 +1083,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t22"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -907,6 +1095,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t23"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -918,6 +1107,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t24"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -954,8 +1144,67 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@android:color/white">
+                                android:background="@android:color/white"
+                                android:orientation="vertical">
 
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_green_1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/init_coin_green_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_green_3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_green_4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
 
@@ -978,6 +1227,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t40"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -989,6 +1239,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t39"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1000,6 +1251,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t38"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1011,6 +1263,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t37"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1023,6 +1276,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t36"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1042,6 +1296,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/tg4"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1054,6 +1309,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tg3"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1066,6 +1322,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tg2"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1078,6 +1335,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/tg1"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1090,6 +1348,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t35"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1110,6 +1369,7 @@
                             android:orientation="vertical">
 
                             <TextView
+                                android:id="@+id/t30"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1121,6 +1381,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t31"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1132,6 +1393,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t32"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1144,6 +1406,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t33"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1155,6 +1418,7 @@
                                 android:background="@android:color/black" />
 
                             <TextView
+                                android:id="@+id/t34"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_gravity="center"
@@ -1183,8 +1447,67 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="10dp"
-                                android:background="@android:color/white">
+                                android:background="@android:color/white"
+                                android:orientation="vertical">
 
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_red_1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_red_2"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/init_coin_red_3"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+
+                                    <TextView
+                                        android:id="@+id/init_coin_red_4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="10dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/boarder"
+                                        android:gravity="center"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="25sp" />
+                                </LinearLayout>
                             </LinearLayout>
                         </LinearLayout>
 
@@ -1198,54 +1521,65 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-            <RelativeLayout
+            <LinearLayout
+                android:id="@+id/dice_green_color"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:gravity="center">
+                android:background="@color/green">
 
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="@android:color/black"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:background="@android:color/white"
+                    android:gravity="center">
 
-                    android:textSize="35sp" />
-            </RelativeLayout>
+                    <TextView
+                        android:id="@+id/dice_value_green"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
 
-            <RelativeLayout
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dice_red_color"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_gravity="center"
                 android:layout_margin="15dp"
-                android:gravity="center">
+                android:background="@color/red">
 
-                <TextView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_gravity="center"
-                    android:layout_margin="5dp"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="@android:color/black"
-                    android:textSize="35sp" />
-            </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
+                    android:background="@android:color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/dice_value_red"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="@android:color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
-
     </LinearLayout>
-
 </RelativeLayout>
